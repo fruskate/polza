@@ -1,0 +1,11 @@
+<main class="main">
+    <div class="bathroom catalog">
+        <div class="bathroom__container catalog__container container">
+            {% for item in products %}
+                {% partial __SELF__~"::make_product_card" item = item %}
+            {% else %}
+                <h1>В этой категории отсутствуют товары.</h1>
+            {% endfor %}
+        </div>
+    </div>
+</main>

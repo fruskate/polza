@@ -1,0 +1,19 @@
+<div class="swiper-slide news__slide">
+    <a href="/product/{{ item.slug }}" class="news__link">
+        <div class="news__column">
+            <div class="news__item">
+                <div class="news__image-block">
+                    <img src="{{ item.images|first.getThumb(200,200,{'mode':'crop'}) }}" alt="{{ item.title }}" />
+                </div>
+                <div class="news__title-block">
+                    <h3>{{ item.title }}</h3>
+                </div>
+                <div class="news__buy">
+                    <span class="news__price">{{ item.price }} руб.</span>
+                    <button class="news__order">заказать</button>
+                </div>
+                <span class="news__compare">добавить в сравнение</span>
+            </div>
+        </div>
+    </a>
+</div>

@@ -1,0 +1,20 @@
+{% if __SELF__.novelties.count() > 2 %}
+    <section class="news">
+        <div class="news__container container">
+            <h2 class="news__title title">новинки</h2>
+            <div class="news__row">
+
+                    <div class="swiper news__swiper">
+                        <div class="swiper-wrapper news__wrapper">
+                            {% for item in __SELF__.novelties %}
+                                {% partial __SELF__~"::make_novelties_slide" item = item %}
+                            {% endfor %}
+                        </div>
+                        <div class="swiper-button-prev news__swiper-button-prev"></div>
+                        <div class="swiper-button-next news__swiper-button-next"></div>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+{% endif %}

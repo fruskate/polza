@@ -1,0 +1,11 @@
+<li class="header__item">
+    <a href="/products" class="header__link">каталог товаров</a>
+    <ul class="header__underlist">
+        {% for item in __SELF__.categories %}
+            <li class="header__under-item">
+                <a href="/category/{{ item.slug }}" class="header__under-link">{{ item.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</li>
+

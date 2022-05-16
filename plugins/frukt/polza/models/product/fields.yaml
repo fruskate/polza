@@ -1,9 +1,14 @@
 fields:
     is_active:
         label: 'Показывать в каталоге?'
-        span: full
-        type: switch
+        span: auto
         default: 1
+        type: switch
+    is_new:
+        label: 'НОВИНКА?'
+        span: auto
+        default: 1
+        type: switch
     title:
         label: Название
         span: auto
@@ -27,7 +32,7 @@ fields:
         span: full
         type: richeditor
     images:
-        label: Изображения товара
+        label: 'Изображения товара'
         type: fileupload
         mode: image
         imageHeight: 300

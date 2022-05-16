@@ -1,0 +1,24 @@
+<main class="main">
+    <div class="bathroom_item">
+        <div class="bathroom_item__container container">
+            <div class="bathroom_item__title-block">
+                <h2 class="bathroom_item__title">{{ item.title }}</h2>
+            </div>
+            <div class="bathroom_item__content">
+                <div class="bathroom_item__image-block">
+                    <img src="{{ item.images|first.getPath() }}" alt="{{ item.title }}">
+                </div>
+                <div class="bathroom_item__text">
+                    <h3>{{ item.title }}</h3>
+                    <div class="bathroom_item__description">
+                        {{ item.desc|raw }}
+                    </div>
+                    <div class="tobuy">
+                        <span class="tobuy__price">{{ item.price }} руб.</span>
+                        <button class="tobuy__button btn">купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

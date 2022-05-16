@@ -1,0 +1,21 @@
+<main class="main">
+    <section class="products">
+        <div class="products__container container">
+            <div class="products__title-block">
+                <h2 class="products__title title">каталог товаров</h2>
+            </div>
+            <div class="products__row">
+                {% for item in categories %}
+                    <div class="products__column">
+                        <div class="products__item">
+                            <a href="/category/{{ item.slug }}" class="products__link">
+                                <img src="{{ item.cover.getThumb(200, 180, {'mode': 'crop'}) }}" alt="{{ item.sub_title }}"/>
+                                <h3>{{ item.title }}</h3>
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</main>

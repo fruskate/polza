@@ -15,3 +15,6 @@ columns:
     is_active:
         label: 'Показывать?'
         type: switch
+    is_new:
+        label: 'Новинка?'
+        type: switch

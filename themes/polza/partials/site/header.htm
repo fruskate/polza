@@ -37,62 +37,23 @@
           </div>
           <!-- /.header__top -->
           <div class="header__bottom">
-            <nav class="header__nav-menu">
-              <ul class="header__list header__list--hidden">
-                <li class="header__item">
-                  <a href="products.html" class="header__link"
-                    >каталог товаров</a
-                  >
-                  <ul class="header__underlist">
-                    <li class="header__under-item">
-                      <a href="bathroom.html" class="header__under-link"
-                        >для ванной</a
-                      >
-                    </li>
-                    <li class="header__under-item">
-                      <a href="home.html" class="header__under-link"
-                        >для дома</a
-                      >
-                    </li>
-                    <li class="header__under-item">
-                      <a href="laundry.html" class="header__under-link"
-                        >для стирки</a
-                      >
-                    </li>
-                    <li class="header__under-item">
-                      <a href="kitchen.html" class="header__under-link"
-                        >для кухни</a
-                      >
-                    </li>
-                    <li class="header__under-item">
-                      <a href="bodycare.html" class="header__under-link"
-                        >уход за телом</a
-                      >
-                    </li>
-                    <li class="header__under-item">
-                      <a href="" class="header__under-link">автохимия</a>
-                    </li>
-                    <li class="header__under-item">
-                      <a href="aroma.html" class="header__under-link"
-                        >ароматизаторы</a
-                      >
-                    </li>
+              <nav class="header__nav-menu">
+                  <ul class="header__list header__list--hidden">
+                      {% component "catalogMenu" %}
+                      <li class="header__item">
+                          <a href="about.html" class="header__link">о компании</a>
+                      </li>
+                      <li class="header__item">
+                          <a href="" class="header__link">новинки</a>
+                      </li>
+                      <li class="header__item">
+                          <a href="promotions.html" class="header__link">акции</a>
+                      </li>
+                      <li class="header__item">
+                          <a href="contacts.html" class="header__link">контакты</a>
+                      </li>
                   </ul>
-                </li>
-                <li class="header__item">
-                  <a href="about.html" class="header__link">о компании</a>
-                </li>
-                <li class="header__item">
-                  <a href="" class="header__link">новинки</a>
-                </li>
-                <li class="header__item">
-                  <a href="promotions.html" class="header__link">акции</a>
-                </li>
-                <li class="header__item">
-                  <a href="contacts.html" class="header__link">контакты</a>
-                </li>
-              </ul>
-            </nav>
+              </nav>
           </div>
           <!-- /.header__bottom -->
         </div>
@@ -101,4 +62,4 @@
       <!-- /.header__menu -->
     </div>
     <!-- /.header__container container -->
-    </header>
+</header>

@@ -1,0 +1,19 @@
+<a href="/product/{{ item.slug }}" class="bathroom__link catalog__link">
+    <div class="bathroom__column catalog__column">
+        <div class="bathroom__item catalog__item">
+            <div class="bathroom__image-block catalog__image-block">
+                <img src="{{ item.images|first.getThumb(80, 200, {'mode': 'crop'}) }}" alt="{{ item.title }}"/>
+            </div>
+            <div class="bathroom__title-block catalog__title-block">
+                <span class="bathroom__description catalog__description">{{ item.title }}</span>
+            </div>
+            <div class="bathroom__buy catalog__buy">
+                    <span class="bathroom__price catalog__price">от {{ item.price }} руб.</span>
+                <button class="bathroom__order catalog__order">
+                    заказать
+                </button>
+            </div>
+            <span class="bathroom__compare catalog__compare">добавить в сравнение</span>
+        </div>
+    </div>
+</a>

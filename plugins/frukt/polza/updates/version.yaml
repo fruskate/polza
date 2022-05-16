@@ -9,3 +9,6 @@
 1.0.4:
     - 'Updated table frukt_polza_products'
     - builder_table_update_frukt_polza_products.php
+1.0.5:
+    - 'Updated table frukt_polza_products'
+    - builder_table_update_frukt_polza_products_2.php
