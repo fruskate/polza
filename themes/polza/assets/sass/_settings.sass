@@ -1,0 +1,153 @@
+*
+    box-sizing: border-box
+
+body, html
+    width: 100%
+    height: 100%
+    font-family: 'Verdana'
+    color: #8E8E8E
+
+a
+    text-decoration: none
+    cursor: pointer
+
+h3
+    display: inline-block
+    margin: 0
+    text-align: center
+    font-weight: 900
+    font-family: 'OfficinaSans'
+    font-size: 24px
+    line-height: 30px
+    text-transform: uppercase
+    color: #156A31
+.policy
+    color: #8E8E8E
+.btn
+    display: flex
+    align-items: center
+    justify-content: center
+    font-weight: 400
+    text-transform: uppercase
+    background: #3C9F3A
+    color: #fff
+    border: none
+
+.wrapper
+    display: flex
+    flex-direction: column
+    overflow: hidden
+    min-height: 100%
+
+.main
+    flex: 1 1 auto
+
+.container
+    max-width: 1330px
+    margin: 0 auto
+    padding: 0 15px
+
+.title
+    font-family: 'OfficinaSans'
+    font-style: normal
+    font-weight: 900
+    font-size: 36px
+    line-height: 45px
+    text-transform: uppercase
+    color: #156A31
+    margin-bottom: 40px
+    text-align: center
+
+.modal
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.8)
+    top: 0
+    left: 0
+    opacity: 0
+    visibility: hidden
+    overflow-x: auto
+    overflow-y: hidden
+    transition: all 0.8s ease 0s
+    z-index: 30
+    &__open
+        opacity: 1
+        visibility: visible
+    &__body
+        min-height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 30px 15px
+    &__content
+        max-width: 450px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        position: relative
+        background: #fff
+        color: #000
+        padding: 30px
+    &__form
+        width: 100%
+    &__form input
+        width: 100%
+        outline: none
+        margin-bottom: 20px
+        padding: 10px 30px 10px 10px
+        box-shadow: 1px 1px 1px 2px #fff
+    &__area
+        width: 100%
+        height: 100px
+        margin-bottom: 30px
+        box-shadow: 1px 1px 1px 2px #fff
+        outline: none
+    &__close
+        display: flex
+        position: absolute
+        top: -16px
+        right: -18px
+        width: 35px
+        height: 35px
+        border-radius: 50%
+        background-color: #fff
+        border: 1px solid #e1e1e1
+    &__close::before,
+    &__close::after
+        content: ""
+        position: absolute
+        top: 15px
+        left: 4px
+        width: 26px
+        height: 4px
+        background: #000
+    &__close::before
+        webkit-transform: rotate(45deg)
+        transform: rotate(45deg)
+    &__close::after
+        webkit-transform: rotate(-45deg)
+        transform: rotate(-45deg)
+    &__title
+        display: flex
+        align-items: center
+        justify-content: center
+    &__title h2
+        font-size: 36px
+        text-transform: capitalize
+        margin-top: 0
+    &__button
+        width: 100%
+        min-height: 70px
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 10px 10px 10px 10px
+        color: #fff
+        font-size: 20px
+        text-transform: uppercase
+        background: #3C9F3A
+        border: none
+        border-radius: 2px
+        cursor: pointer

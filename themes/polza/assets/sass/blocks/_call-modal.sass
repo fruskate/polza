@@ -1,0 +1,85 @@
+.call-modal
+    position: relative
+
+    &__body
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        background-color: rgba(244, 244, 244, 0.51)
+        z-index: 90
+        visibility: hidden
+        opacity: 0
+        transition: all 0.8s ease 0s
+        &--visible
+            visibility: visible
+            opacity: 1
+            transition: all 0.8s ease 0s
+    &__content
+        max-width: 450pxt
+        display: flex
+        flex-direction: column
+        align-items: center
+        position: fixed
+        right: 50%
+        top: 50%
+        transform: translate(50%, -50%)
+        padding: 40px 50px
+        border-radius: 2px
+        background: #fff
+        visibility: hidden
+        &--visible
+            visibility: visible
+    &__title
+        font-size: 32px
+        text-transform: uppercase
+        color: #000
+        margin-bottom: 45px
+    &__form
+        display: flex
+        flex-direction: column
+        width: 100%
+    &__form input
+        margin-bottom: 30px
+        padding: 10px 30px 10px 10px
+        outline: none
+    &__form &__phone
+        margin-bottom: 50px
+    &__button
+        min-height: 70px
+        background-color: #156A31
+        border-radius: 2px
+        border: none
+        cursor: pointer
+        margin-bottom: 15px
+    &__button span
+        color: #fff
+        font-size: 24px
+        text-transform: uppercase
+    &__close
+        display: flex
+        position: absolute
+        top: -16px
+        right: -18px
+        width: 35px
+        height: 35px
+        border-radius: 50%
+        background-color: #fff
+        border: 1px solid #e1e1e1
+        cursor: pointer
+    &__close::before,
+    &__close::after
+        content: ""
+        position: absolute
+        top: 15px
+        left: 4px
+        width: 26px
+        height: 4px
+        background: #000
+    &__close::before
+        webkit-transform: rotate(45deg)
+        transform: rotate(45deg)
+    &__close::after
+        webkit-transform: rotate(-45deg)
+        transform: rotate(-45deg)

@@ -1,0 +1,92 @@
+.news
+    padding: 40px 0 50px 0
+    &__slide
+        display: flex
+        max-width: 420px
+        margin-right: 20px
+    // &__slide a:not(:last-child)
+    //     margin-right: 20px
+
+    &__link
+        display: inline-flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+    &__column
+        flex: 1 1 33.333%
+        padding: 50px 40px 50px
+        border: 1px solid #CFCFCF
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+    &__image-block
+        max-width: 200px
+        height: 190px
+        position: relative
+        margin-bottom: 25px
+    &__image-block::before
+        content: 'новинка'
+        position: absolute
+        top: 0
+        right: 0
+        transform: translateX(50%) translateY(-50%)
+        min-height: 17px
+        padding: 13px 19px
+        background-color: #3C9F3A
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+    &__image-block img
+        max-width: 100%
+
+    &__title-block
+        max-width: 269px
+        // margin-bottom: 60px
+        min-height: 140px
+    &__buy
+        display: flex
+        margin-bottom: 50px
+    &__price
+        display: flex
+        align-items: center
+        justify-content: center
+        min-height: 25px
+        padding: 17px 28px 15px
+        border: 1px solid #CFCFCF
+        font-weight: 400
+        font-size: 20px
+        line-height: 24px
+        text-align: center
+        text-transform: uppercase
+        color: #156A31
+        margin-right: 42px
+    &__order
+        display: flex
+        align-items: center
+        justify-content: center
+        min-height: 25px
+        padding: 16px 21px 16px
+        position: relative
+        z-index: 10
+        font-weight: 400
+        font-size: 20px
+        line-height: 24px
+        text-align: center
+        text-transform: uppercase
+        background: #3C9F3A
+        color: #fff
+        border: none
+    &__compare
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        text-transform: uppercase
+        color: #8E8E8E

@@ -1,0 +1,83 @@
+.modal-message
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba(21, 106, 49, 0.7)
+    background: rgb(15,125,51)
+    background: radial-gradient(circle, rgba(15,125,51,0.5331320028011204) 27%, rgba(183,215,194,0.8020395658263305) 73%, rgba(245,244,244,0.8356530112044818) 100%)
+    top: 0
+    left: 0
+    opacity: 0
+    visibility: hidden
+    z-index: 10
+    transition: all 0.8s ease 0s
+    &__open
+        opacity: 1
+        visibility: visible
+    &__body
+        max-width: 450px
+        padding: 50px 30px
+        background-color: #fff
+        position: absolute
+        top: 50%
+        right: 50%
+        transform: translate(50%, -50%)
+        border-radius: 2px
+    &__title
+        margin-bottom: 40px
+    &__title h2
+        text-align: center
+        font-size: 26px
+        color: #000
+        text-transform: uppercase
+    &__form
+        width: 100%
+    &__form input
+        width: 100%
+        outline: none
+        margin-bottom: 20px
+        padding: 10px 30px 10px 10px
+        box-shadow: 1px 1px 1px 2px #fff
+    &__area
+        width: 100%
+        height: 100px
+        margin-bottom: 30px
+        outline: none
+    &__close
+        display: flex
+        position: absolute
+        top: -16px
+        right: -18px
+        width: 35px
+        height: 35px
+        border-radius: 50%
+        background-color: #fff
+        border: 1px solid #e1e1e1
+    &__close::before,
+    &__close::after
+        content: ""
+        position: absolute
+        top: 15px
+        left: 4px
+        width: 26px
+        height: 4px
+        background: #000
+    &__close::before
+        webkit-transform: rotate(45deg)
+        transform: rotate(45deg)
+    &__close::after
+        webkit-transform: rotate(-45deg)
+        transform: rotate(-45deg)
+    &__button
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 10px 10px 10px 10px
+        color: #fff
+        font-size: 20px
+        text-transform: uppercase
+        background: #3C9F3A
+        border: none
+        border-radius: 2px
+        cursor: pointer

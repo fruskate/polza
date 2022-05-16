@@ -1,0 +1,25 @@
+fields:
+    is_menu:
+        label: 'Показывать в меню?'
+        span: full
+        type: switch
+        default: 1
+    title:
+        label: 'Краткое название'
+        span: auto
+        type: text
+    slug:
+        label: 'ЧПУ ссылка'
+        span: auto
+        type: text
+        preset: title
+    sub_title:
+        label: 'Полное название'
+        span: full
+        type: text
+    cover:
+        label: Обложка
+        type: fileupload
+        mode: image
+        imageHeight: 300
+        imageWidth: 300

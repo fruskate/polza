@@ -1,0 +1,10 @@
+name: Products
+form: $/frukt/polza/models/product/fields.yaml
+modelClass: Frukt\Polza\Models\Product
+defaultRedirect: frukt/polza/products
+create:
+    redirect: 'frukt/polza/products/update/:id'
+    redirectClose: frukt/polza/products
+update:
+    redirect: frukt/polza/products
+    redirectClose: frukt/polza/products

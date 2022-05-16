@@ -1,0 +1,477 @@
+@media ( max-width: 1700px)
+    .main-block
+        &__title-block
+            padding: 120px 0px 110px 210px
+
+@media ( max-width: 1600px)
+    .main-block
+        &__title-block
+            padding: 100px 0px 100px 180px
+        &__title-slide__bg
+            background-size: contain !important
+            height: 760px
+        &__title
+            font-size: 58px
+            // line-height: 72px
+            max-width: 850px
+
+@media ( max-width: 1450px)
+    .main-block
+        &__title-slide
+            padding-top: 50px
+        &__title-block
+            padding: 80px 0px 80px 200px
+        &__title
+            font-size: 56px
+            // line-height: 68px
+            max-width: 700px
+        &__title-slide__bg
+            height: 680px
+
+@media (max-width: 1340px)
+    .about
+        &__content
+            padding: 55px 230px
+    .products
+        &__column
+            margin-right: 20px
+
+@media (max-width: 1300px)
+    .contacts
+
+        &__container
+            flex-direction: column
+        &__location
+            text-align: center
+            margin-bottom: 40px
+
+@media (max-width: 1200px)
+
+    .main-block
+        &__title-block
+            padding: 50px 0px 50px 200px
+        &__title-slide__bg
+            height: 580px
+        &__title
+            font-size: 50px
+            // line-height: 58px
+        &__button
+            min-height: 60px
+            padding: 22px 69px
+
+    .sale
+        padding: 50px 0 100px 0
+@media (max-width: 992px)
+
+    .main-block
+        &__title-slide
+            padding-top: 30px
+        &__title-block
+            padding: 50px 0px 50px 150px
+        &__title-slide__bg
+            height: 500px
+        &__title
+            font-size: 44px
+            // line-height: 50px
+            max-width: 600px
+        &__button
+            min-height: 50px
+            padding: 18px 69px
+
+    .about
+        &__container
+            padding: 0
+        &__content
+            padding: 40px 140px
+        &__content p
+            font-size: 22px
+            margin-bottom: 10px
+        &__content p + p
+            font-size: 16px
+        &__content::before
+            top: -60px
+            right: -110px
+        &__content::after
+            left: -76px
+            top: -50px
+            rotate: 69deg
+
+    .sale
+        padding: 50px 0 80px 0
+
+    .footer
+        &__container
+            flex-wrap: wrap
+
+        &__column:not(:last-child)
+            flex: 0 1 33.333%
+            justify-content: center
+            margin-bottom: 30px
+        &__column:last-child
+            flex: 0 1 100%
+            justify-content: flex-start
+        &__column:nth-child(2),&__column:nth-child(3)
+            justify-content: flex-end
+
+    .bathroom_item
+        &__title-block
+            text-align: center
+        &__title
+            font-size: 32px
+        &__content
+            flex-direction: column
+            align-items: center
+        &__image-block
+            height: 700px
+            margin-bottom: 40px
+        &__text
+            max-width: 100%
+    .tobuy
+        justify-content: space-between
+        max-width: 100%
+        &__price
+            margin-left: 100px
+        &__button
+            height: 75px
+            width: 50%
+
+@media (max-width: 767px)
+    body
+        padding-top: 80px
+    .header-wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+    .header
+        &__bottom::after
+            display: none
+        &__fixed
+            position: fixed
+            top: 0
+            right: 0
+            left: 0
+            z-index: 20
+            background-color: white
+            padding: 0
+        &__logo-fixed
+            display: flex
+            width: 90px
+            height: 80px
+        &__menu
+            display: none
+            &--hidden
+                display: flex
+                flex-direction: column-reverse
+                justify-content: space-between
+                position: fixed
+                z-index: 20
+                top: 80px
+                right: 0
+                left: 0
+                bottom: 0
+                background-color: #F1FDF5
+        &__top
+            &--hidden
+                justify-content: center
+        &__top-info,&__button
+            display: none
+        &__top-info
+            &--fixed span
+                font-size: 14px
+                text-align: center
+                margin-bottom: 0
+            &--fixed
+                display: flex
+                flex-basis: 150px
+
+        &__list
+            &--hidden
+                flex-direction: column
+        &__item
+            margin-bottom: 30px
+        &__link
+            font-size: 24px
+        &__icon-menu
+            display: flex
+            flex-direction: column
+            width: 24px
+            cursor: pointer
+        &__icon-menu span
+            width: 100%
+            height: 2px
+            background-color: #3C9F3A
+            margin-bottom: 6px
+        &__under-link
+            font-size: 22px
+        &__under-item
+            margin-bottom: 20px
+
+    .main-block
+        &__title-block
+            padding: 50px 0px 50px 110px
+        &__title-slide__bg
+            height: 400px
+            top: -20px
+        &__title
+            font-size: 36px
+            max-width: 500px
+            margin-bottom: 20px
+        &__button
+            min-height: 40px
+            padding: 15px 30px
+            max-width: 250px
+            font-size: 16px
+
+    .about
+        &__content
+            padding: 25px 90px
+        &__content p
+            font-size: 20px
+        &__content p + p
+            font-size: 14px
+        &__content::before
+            top: -37px
+            right: -135px
+            rotate: 35deg
+        &__content::after
+            left: -120px
+            top: -10px
+            rotate: 52deg
+    .products
+        &__column
+            flex: 1 0 100%
+        &__column:not(:last-child),&__column:last-child
+            margin-right: 0
+        &__link
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &__item:not(:last-child),&__item:last-child
+            padding: 46px 80px 46px 80px
+
+    .sale
+        padding: 50px 0 50px 0
+
+    .footer
+        &__column:not(:last-child), &__column:last-child
+            flex: 1 0 50%
+            justify-content: flex-start
+
+    .bathroom_item
+        padding: 50px 0
+        &__image-block
+            max-height: 600px
+        &__title
+            font-size: 28px
+    .tobuy
+        flex-direction: column
+        &__price
+            margin-bottom: 40px
+            margin-left: 0
+        &__button
+            width: 100%
+            height: 75px
+
+    .contact
+        &__map
+            max-width: 550px
+            height: 400px
+
+@media (max-width: 576px)
+
+    .title
+        font-size: 32px
+        line-height: 40px
+    .breadcrumb
+        &__item
+            font-size: 14px
+
+    .main-block
+        &__title-block
+            padding: 20px 0px 20px 80px
+        &__title-slide__bg
+            height: 300px
+            top: -20px
+        &__title
+            font-size: 28px
+            max-width: 400px
+            margin-bottom: 10px
+        &__button
+            min-height: 30px
+            padding: 10px 15px
+            max-width: 200px
+            font-size: 14px
+
+    .about
+        &__content
+            padding: 20px 50px
+        &__content p
+            font-size: 20px
+        &__content p + p
+            font-size: 14px
+        &__content::before
+            top: 55px
+            right: -143px
+            rotate: 75deg
+        &__content::after
+            left: -142px
+            top: -38px
+            rotate: 50deg
+
+    .footer
+        &__column:not(:last-child), &__column:last-child
+            flex: 1 0 100%
+            justify-content: center
+            align-items: center
+            display: flex
+            text-align: center
+
+    .bathroom_item
+        &__text p
+            font-size: 16px
+            line-height: 22px
+    .contacts
+        &__container
+            padding: 0
+        &__location
+            padding: 0 10px
+        &__title
+            font-size: 36px
+            margin-bottom: 0
+        &__addres, &__time p
+            font-size: 14px
+            margin-top: 0
+
+@media (max-width: 530px)
+    .contacts
+        &__map
+            height: 400px
+        &__frame
+            height: 100%
+
+@media (max-width: 480px)
+    body
+        padding-top: 65px
+    .title
+        font-size: 30px
+        line-height: 40px
+        margin-top: 0
+        margin-bottom: 35px
+    .header
+        &__fixed
+            padding: 5px 0
+        &__menu
+            &--hidden
+                top: 60px
+        &__top-info
+            &--fixed span
+                font-size: 12px
+                text-align: center
+            &--fixed
+                display: flex
+                flex-basis: 150px
+        &__logo-fixed
+            display: flex
+            width: 50px
+            height: 50px
+
+    .breadcrumb
+        &__list
+            top: 0
+        &__item
+            font-size: 12px
+
+    .main-block
+        padding-bottom: 30px
+        &__title-block
+            padding: 20px 0px 20px 70px
+        &__title-slide__bg
+            height: 270px
+            top: -20px
+        &__title
+            font-size: 26px
+            max-width: 320px
+        &__button
+            min-height: 25px
+            padding: 5px 15px
+            max-width: 200px
+            font-size: 14px
+
+    .about
+        padding: 30px 0
+        &__content
+            padding: 20px 35px
+
+    .products
+        padding: 25px 0
+        &__column
+            margin-right: 0
+        &__item:not(:last-child),&__item:last-child
+            min-height: 250px
+            padding: 0
+        &__item img
+            width: 125px
+            margin-bottom: 20px
+        &__link h3
+            font-size: 20px
+    .news
+        padding: 25px 0
+
+    .bathroom_item
+        &__image-block
+            max-height: 400px
+        &__title
+            font-size: 26px
+        &__text p
+            font-size: 14px
+
+    .catalog
+        &__column
+            padding: 40px 20px 45px
+        &__title-block
+            min-height: 70px
+        &__description
+            font-size: 18px
+        &__buy
+            margin-bottom: 40px
+    .contacts
+        &__title
+            font-size: 32px
+
+@media (max-width: 430px)
+    .contacts
+        &__map
+            height: 320px
+        &__frame
+            height: 100%
+
+@media (max-width: 400px)
+    .bathroom
+        &__buy
+            flex-direction: column
+            margin-bottom: 40px
+        &__price
+            margin: 0 0 25px 0
+@media (max-width: 360px)
+
+    .main-block__title
+        font-size: 22px
+
+@media ( max-width: 320px )
+
+    .main-block
+        &__title-block
+            padding: 20px 0px 20px 50px
+        &__title-slide__bg
+            height: 270px
+
+        &__title
+            font-size: 22px
+            max-width: 320px
+            margin-top: 0
+        &__button
+            min-height: 25px
+            padding: 5px 15px
+            max-width: 200px
+            font-size: 14px

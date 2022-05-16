@@ -1,0 +1,59 @@
+.about
+    padding: 50px 0
+    &__container
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    &__content
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        position: relative
+        padding: 55px 308px
+        background: #F1FDF5
+    &__content::before
+        content: url(../img/leaves/02.png)
+        position: absolute
+        right: -110px
+        top: -90px
+    &__content::after
+        content: url(../img/leaves/01.png)
+        position: absolute
+        left: -50px
+    &__content p
+        text-align: center
+        font-weight: 400
+        font-size: 24px
+        line-height: 146.03%
+        color: #8E8E8E
+        margin: 0
+        margin-bottom: 15px
+    &__content p:last-child
+        margin-bottom: 0
+    &__content p + p
+        text-align: center
+        font-weight: normal
+        font-size: 18px
+        line-height: 26 / 18 * 100%
+    &__span
+        font-weight: 700
+        font-size: 18px
+        line-height: 146.03%
+        color: #156A31
+    &__image-block
+        position: absolute
+    &__image-block--1
+        left: -53px
+        max-width: 293px
+        height: 259px
+    &__image-block--1 img
+        max-width: 100%
+    &__image-block--2
+        max-width: 132px
+        height: 233px
+    &__image-block--2 img
+        max-width: 100%
+        height: 100%
+        object-fit: cover

@@ -1,0 +1,20 @@
+plugin:
+    name: 'frukt.polza::lang.plugin.name'
+    description: 'frukt.polza::lang.plugin.description'
+    author: Frukt
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Чистая польза'
+        url: /
+        icon: icon-android
+        sideMenu:
+            side-menu-item:
+                label: Категории
+                url: frukt/polza/categories
+                icon: icon-sitemap
+            side-menu-item2:
+                label: Товары
+                url: frukt/polza/products
+                icon: icon-soccer-ball-o

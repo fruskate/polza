@@ -1,0 +1,11 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table frukt_polza_categories'
+    - builder_table_create_frukt_polza_categories.php
+1.0.3:
+    - 'Created table frukt_polza_products'
+    - builder_table_create_frukt_polza_products.php
+1.0.4:
+    - 'Updated table frukt_polza_products'
+    - builder_table_update_frukt_polza_products.php

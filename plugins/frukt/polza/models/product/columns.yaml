@@ -1,0 +1,17 @@
+columns:
+    title:
+        label: Название
+        type: text
+        searchable: true
+    price:
+        label: Стоимость
+        type: text
+    created_at:
+        label: Создан
+        type: datetime
+    updated_at:
+        label: Обновлен
+        type: datetime
+    is_active:
+        label: 'Показывать?'
+        type: switch

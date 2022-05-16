@@ -1,0 +1,18 @@
+columns:
+    title:
+        label: Название
+        type: text
+        searchable: true
+    products_counter:
+        label: Количество
+        relation: products
+        useRelationCount: true
+    created_at:
+        label: Создано
+        type: datetime
+    updated_at:
+        label: Обновлено
+        type: datetime
+    is_menu:
+        label: 'Показывать в меню?'
+        type: switch

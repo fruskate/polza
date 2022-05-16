@@ -1,0 +1,10 @@
+name: Categories
+form: $/frukt/polza/models/category/fields.yaml
+modelClass: Frukt\Polza\Models\Category
+defaultRedirect: frukt/polza/categories
+create:
+    redirect: 'frukt/polza/categories/update/:id'
+    redirectClose: frukt/polza/categories
+update:
+    redirect: frukt/polza/categories
+    redirectClose: frukt/polza/categories

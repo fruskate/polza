@@ -1,0 +1,21 @@
+.breadcrumb
+    &__list
+        position: relative
+        top: 30px
+        max-width:
+        display: flex
+        list-style: none
+        padding: 0
+        margin: 0
+    &__item
+        position: relative
+        margin-right: 15px
+
+    &__item:not(:last-child)::after
+        content: "/"
+        display: block
+        position: absolute
+        right: -10px
+        top: 0
+    &__link:visited
+        color: #156A31
